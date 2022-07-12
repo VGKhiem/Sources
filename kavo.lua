@@ -231,7 +231,7 @@ function Kavo.CreateLib(kavName, themeList)
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
-    Main.Size = UDim2.new(0, 525, 0, 318)
+    Main.Size = UDim2.new(0, 525, 0, 381.6)
 
     MainCorner.CornerRadius = UDim.new(0, 4)
     MainCorner.Name = "MainCorner"
@@ -241,7 +241,7 @@ function Kavo.CreateLib(kavName, themeList)
     MainHeader.Parent = Main
     MainHeader.BackgroundColor3 = themeList.Header
     Objects[MainHeader] = "BackgroundColor3"
-    MainHeader.Size = UDim2.new(0, 525, 0, 29)
+    MainHeader.Size = UDim2.new(0, 650, 0, 50)
     headerCover.CornerRadius = UDim.new(0, 4)
     headerCover.Name = "headerCover"
     headerCover.Parent = MainHeader
@@ -306,7 +306,7 @@ function Kavo.CreateLib(kavName, themeList)
     pages.BackgroundTransparency = 1.000
     pages.BorderSizePixel = 0
     pages.Position = UDim2.new(0.299047589, 0, 0.122641519, 0)
-    pages.Size = UDim2.new(0, 360, 0, 269)
+    pages.Size = UDim2.new(0, 360, 0, 332.6)
 
     Pages.Name = "Pages"
     Pages.Parent = pages
