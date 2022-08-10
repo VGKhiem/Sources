@@ -226,12 +226,12 @@ function Kavo.CreateLib(kavName, themeList)
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     ScreenGui.ResetOnSpawn = false
 
-    Main.Name = "Main"
+    Main.Name = "Main"--change all height here
     Main.Parent = ScreenGui
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
-    Main.Size = UDim2.new(0, 525, 0, 381.6)
+    Main.Size = UDim2.new(0, 525, 0, 457.92)
 
     MainCorner.CornerRadius = UDim.new(0, 4)
     MainCorner.Name = "MainCorner"
@@ -300,13 +300,13 @@ function Kavo.CreateLib(kavName, themeList)
     tabListing.Parent = tabFrames
     tabListing.SortOrder = Enum.SortOrder.LayoutOrder
 
-    pages.Name = "pages"
+    pages.Name = "pages"--change  right height here
     pages.Parent = Main
     pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     pages.BackgroundTransparency = 1.000
     pages.BorderSizePixel = 0
     pages.Position = UDim2.new(0.299047589, 0, 0.122641519, 0)
-    pages.Size = UDim2.new(0, 360, 0, 332.6)
+    pages.Size = UDim2.new(0, 360, 0, 437.28)
 
     Pages.Name = "Pages"
     Pages.Parent = pages
