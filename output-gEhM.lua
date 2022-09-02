@@ -1,4 +1,4 @@
---Boronide™ Premium Obfuscation, v0.6.2
+--Boronide™ Premium Obfuscation
 
 local M,z,l=nil,nil,nil([[
 
