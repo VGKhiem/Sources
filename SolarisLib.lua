@@ -1,11 +1,11 @@
 -- This User Interface Library is brought to you by Solaris Software.
 local Solaris = Instance.new("ScreenGui")
-Solaris.Name = tostring(math.random())
+Solaris.Name = "dosage's solaris gui"
 Solaris.Parent = game.CoreGui
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationHolder = Instance.new("ScreenGui")
-NotificationHolder.Name = tostring(math.random())
+NotificationHolder.Name = "notiHolder"
 NotificationHolder.Parent = game.CoreGui
 NotificationHolder.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -39,26 +39,26 @@ script = oldScript
 local SolarisLib = {
     Themes = {
         Default = {
-            MainFrame = Color3.fromRGB(35, 37, 39),
-            TopBar = Color3.fromRGB(35, 37, 39),
+            MainFrame = Color3.fromRGB(25, 25, 25),
+            TopBar = Color3.fromRGB(30, 30, 30),
             TextColor =  Color3.fromRGB(255,255,255),
-            Menu = Color3.fromRGB(57, 66, 57),
-            TabToggled = Color3.fromRGB(35, 37, 39),
-            Button = Color3.fromRGB(47,49,54),
-            ButtonHold = Color3.fromRGB(71,82,196),
-            Toggle = Color3.fromRGB(47,49,54),
-            ToggleFrame = Color3.fromRGB(67,69,74),
+            Menu = Color3.fromRGB(37, 37, 37),
+            TabToggled = Color3.fromRGB(43,43,43),
+            Button = Color3.fromRGB(30,30,30),
+            ButtonHold = Color3.fromRGB(31,31,31),
+            Toggle = Color3.fromRGB(30,30,30),
+            ToggleFrame = Color3.fromRGB(55,55,55),
             ToggleToggled = Color3.fromRGB(22, 168, 76),
-            Slider = Color3.fromRGB(47,49,54),
-            SliderBar = Color3.fromRGB(42,44,49),
-            SliderInc = Color3.fromRGB(62,64,69),
-            Dropdown = Color3.fromRGB(47,49,54),
-            DropdownItem = Color3.fromRGB(47,49,54),
-            Textbox = Color3.fromRGB(47,49,54),
-            TextboxFrame = Color3.fromRGB(42,44,49),
-            Colorpicker = Color3.fromRGB(47,49,54),
-            Label = Color3.fromRGB(47,49,54),
-            Bind = Color3.fromRGB(47,49,54)
+            Slider = Color3.fromRGB(30,30,30),
+            SliderBar = Color3.fromRGB(25, 25, 25),
+            SliderInc = Color3.fromRGB(60, 60, 60),
+            Dropdown = Color3.fromRGB(30,30,30),
+            DropdownItem = Color3.fromRGB(30,30,30),
+            Textbox = Color3.fromRGB(30,30,30),
+            TextboxFrame = Color3.fromRGB(25, 25, 25),
+            Colorpicker = Color3.fromRGB(30,30,30),
+            Label = Color3.fromRGB(30,30,30),
+            Bind = Color3.fromRGB(30,30,30)
         },
         Discord = {
             MainFrame = Color3.fromRGB(54,57,63),
@@ -152,7 +152,7 @@ local SolarisLib = {
     Settings = {
         Theme = "Default",
         ShowFriendsOnLaunch = true,
-        ShowMusicOnLaunch = true,
+        ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
     },
     Flags = {},
@@ -614,7 +614,7 @@ function SolarisLib:New(Config)
         end   
         
         local general = Settings:Tab("General")
-        general:ToggleSetting("Show Music On Launch", "Shows the music menu when you load the UI", true, "ShowMusicOnLaunch")
+        general:ToggleSetting("Show Music On Launch", "Shows the music menu when you load Snow Hub", true, "ShowMusicOnLaunch")
         general:BindSetting("Close Bind", "Hides/Shows the main window when pressed.", Enum.KeyCode.RightControl, "CloseBind")
         
         local appearance = Settings:Tab("Appearance")
