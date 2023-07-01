@@ -222,12 +222,12 @@ TextBox.Parent = Prefabs
 TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
 TextBox.BackgroundTransparency = 1
 TextBox.BorderSizePixel = 0
-TextBox.Size = UDim2.new(1, 0, 0, 20)
+TextBox.Size = UDim2.new(0.5, 0, 0, 20)
 TextBox.ZIndex = 2
 TextBox.Font = Enum.Font.GothamSemibold
 TextBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
 TextBox.PlaceholderText = "Input Text"
-TextBox.Text = ""
+TextBox.Text =""
 TextBox.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
 TextBox.TextSize = 14
 
