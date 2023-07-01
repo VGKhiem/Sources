@@ -841,7 +841,7 @@ local Windows = script.Parent:FindFirstChild("Windows")
 local checks = {
 	["binding"] = false,
 }
-
+--[[
 UIS.InputBegan:Connect(function(input, gameProcessed)
 	if input.KeyCode == ((typeof(ui_options.toggle_key) == "EnumItem") and ui_options.toggle_key or Enum.KeyCode.RightShift) then
 		if script.Parent then
@@ -850,7 +850,7 @@ UIS.InputBegan:Connect(function(input, gameProcessed)
 			end
 		end
 	end
-end)
+end)]]
 
 local function Resize(part, new, _delay)
 	_delay = _delay or 0.5
