@@ -124,7 +124,7 @@ Bar.Parent = Window
 Bar.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
 Bar.BorderSizePixel = 0
 Bar.Position = UDim2.new(0, 0, 0, 5)
-Bar.Size = UDim2.new(1, 0, 0, 15)
+Bar.Size = UDim2.new(1, 0, 0, 20)
 
 Toggle.Name = "Toggle"
 Toggle.Parent = Bar
