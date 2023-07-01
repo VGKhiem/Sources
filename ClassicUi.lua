@@ -118,7 +118,7 @@ Resizer.BackgroundTransparency = 1
 Resizer.BorderSizePixel = 0
 Resizer.Position = UDim2.new(1, -20, 1, -20)
 Resizer.Size = UDim2.new(0, 20, 0, 20)
-
+--[[
 Bar.Name = "Bar"
 Bar.Parent = Window
 Bar.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
@@ -157,7 +157,7 @@ Top.Image = "rbxassetid://2851926732"
 Top.ImageColor3 = Color3.new(0.160784, 0.290196, 0.478431)
 Top.ScaleType = Enum.ScaleType.Slice
 Top.SliceCenter = Rect.new(12, 12, 12, 12)
-
+]]
 Tabs.Name = "Tabs"
 Tabs.Parent = Window
 Tabs.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -227,7 +227,7 @@ TextBox.ZIndex = 2
 TextBox.Font = Enum.Font.GothamSemibold
 TextBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
 TextBox.PlaceholderText = "Input Text"
-TextBox.Text =""
+TextBox.Text = TextBox.PlaceholderText ..""
 TextBox.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
 TextBox.TextSize = 14
 
@@ -1061,15 +1061,15 @@ function library:AddWindow(title, options)
 
 	do -- Altering Window Color
 		local Title = Window:FindFirstChild("Title")
-		local Bar = Window:FindFirstChild("Bar")
-		local Base = Bar:FindFirstChild("Base")
-		local Top = Bar:FindFirstChild("Top")
+		--local Bar = Window:FindFirstChild("Bar")
+		--local Base = Bar:FindFirstChild("Base")
+		--local Top = Bar:FindFirstChild("Top")
 		local SplitFrame = Window:FindFirstChild("TabSelection"):FindFirstChild("Frame")
-		local Toggle = Bar:FindFirstChild("Toggle")
+		--local Toggle = Bar:FindFirstChild("Toggle")
 
 		spawn(function()
 			while true do
-				Bar.BackgroundColor3 = options.main_color
+				--Bar.BackgroundColor3 = options.main_color
 				Base.BackgroundColor3 = options.main_color
 				Base.ImageColor3 = options.main_color
 				Top.ImageColor3 = options.main_color
@@ -1142,7 +1142,7 @@ function library:AddWindow(title, options)
 			end
 		end)
 	end
-
+--[[
 	do -- [Open / Close] Window
 		local open_close = Window:FindFirstChild("Bar"):FindFirstChild("Toggle")
 		local open = true
@@ -1191,7 +1191,7 @@ function library:AddWindow(title, options)
 
 			end
 		end)
-	end
+	end]]
 
 	do -- UI Elements
 		local tabs = Window:FindFirstChild("Tabs")
