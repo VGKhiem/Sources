@@ -1152,7 +1152,7 @@ function library:AddWindow(title, options)
 			end
 		end)
 	end
---[[
+-----------------------------------------------------------------------------------------------------------------
 	do -- [Open / Close] Window
 		local open_close = Window:FindFirstChild("Bar"):FindFirstChild("Toggle")
 		local open = true
@@ -1201,7 +1201,7 @@ function library:AddWindow(title, options)
 
 			end
 		end)
-	end]]
+	end
 
 	do -- UI Elements
 		local tabs = Window:FindFirstChild("Tabs")
